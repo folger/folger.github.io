@@ -1,0 +1,25 @@
+---
+layout: default
+title: 64位Windows下32位应用程序访问64位注册表键值，或者反过来
+---
+<p>
+本来以为64位Windows下，32位app只能访问32位注册表键值，64位app只能访问64位，原来可以很简单地通过以下两个flag来实现互通：
+</p>
+<p>
+	<b>KEY_WOW64_64KEY</b><br>
+	<b>KEY_WOW64_32KEY</b>
+</p>
+<p>
+可以应用的函数包括：
+</p>
+<p>
+	<b>RegCreateKeyEx</b><br>
+	<b>RegDeleteKeyEx</b><br>
+	<b>RegOpenKeyEx</b>
+</p>
+<p>
+MSDN：<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129(v=vs.85).aspx">Accessing an Alternate Registry View</a>
+</p>
+<p>
+{{ page.date | date_to_string }}
+</p>
