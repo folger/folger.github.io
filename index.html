@@ -38,9 +38,9 @@
 <nav id="site-navigation" class="main-navigation" role="navigation">
   <ul>
     
-      <li><a href="/">Home</a></li>
+      <li><a href="/">主页</a></li>
     
-      <li><a href="/archives">Archives</a></li>
+      <li><a href="/archives">归档</a></li>
     
   </ul>
 </nav></header>
@@ -181,7 +181,7 @@
     <div class="entry">
       
         <p>本来以为64位Windows下，32位app只能访问32位注册表键值，64位app只能访问64位，原来可以很简单地通过以下两个flag来实现互通：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">KEY_WOW64_64KEY</span><br><span class="line">KEY_WOW64_32KEY</span><br></pre></td></tr></table></figure></p>
-<p>可以应用的函数包括：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RegCreateKeyEx</span><br><span class="line">RegDeleteKeyEx</span><br><span class="line">RegOpenKeyEx</span><br></pre></td></tr></table></figure></p>
+<p>可以应用的函数包括：<br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724844(v=vs.85).aspx" target="_blank" rel="external">RegCreateKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724847(v=vs.85).aspx" target="_blank" rel="external">RegDeleteKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724897(v=vs.85).aspx" target="_blank" rel="external">RegOpenKeyEx</a></p>
 <p>MSDN：<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129(v=vs.85).aspx" target="_blank" rel="external">Accessing an Alternate Registry View</a></p>
 
       
