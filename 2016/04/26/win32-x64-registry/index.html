@@ -6,8 +6,7 @@
   <title>64位Windows下32位应用程序访问64位注册表键值，或者反过来 | Folger&#39;s</title>
   <meta name="author" content="Folger Lun">
   
-  <meta name="description" content="本来以为64位Windows下，32位app只能访问32位注册表键值，64位app只能访问64位，原来可以很简单地通过以下两个flag来实现互通：12KEY_WOW64_64KEYKEY_WOW64_32KEY
-可以应用的函数包括：RegCreateKeyExRegDeleteKeyExRegOpe">
+  <meta name="description" content="&amp;#x672C;&amp;#x6765;&amp;#x4EE5;&amp;#x4E3A;64&amp;#x4F4D;Windows&amp;#x4E0B;&amp;#xFF0C;32&amp;#x4F4D;app&amp;#x53EA;&amp;#x80FD;&amp;#x8BBF;&amp;#x95EE;32&amp;#x4F4D;&amp;#x6CE8;&amp;#x518C;&amp;#x8868;&amp;#x952">
   
   
 
@@ -41,9 +40,9 @@
 <nav id="site-navigation" class="main-navigation" role="navigation">
   <ul>
     
-      <li><a href="/">主页</a></li>
+      <li><a href="/">Home</a></li>
     
-      <li><a href="/archives">归档</a></li>
+      <li><a href="/archives">Archives</a></li>
     
   </ul>
 </nav></header>
@@ -74,9 +73,9 @@
   <div class="article-content">
     <div class="entry">
       
-        <p>本来以为64位Windows下，32位app只能访问32位注册表键值，64位app只能访问64位，原来可以很简单地通过以下两个flag来实现互通：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">KEY_WOW64_64KEY</span><br><span class="line">KEY_WOW64_32KEY</span><br></pre></td></tr></table></figure></p>
-<p>可以应用的函数包括：<br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724844(v=vs.85).aspx" target="_blank" rel="external">RegCreateKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724847(v=vs.85).aspx" target="_blank" rel="external">RegDeleteKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724897(v=vs.85).aspx" target="_blank" rel="external">RegOpenKeyEx</a></p>
-<p>MSDN：<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129(v=vs.85).aspx" target="_blank" rel="external">Accessing an Alternate Registry View</a></p>
+        <p>&#x672C;&#x6765;&#x4EE5;&#x4E3A;64&#x4F4D;Windows&#x4E0B;&#xFF0C;32&#x4F4D;app&#x53EA;&#x80FD;&#x8BBF;&#x95EE;32&#x4F4D;&#x6CE8;&#x518C;&#x8868;&#x952E;&#x503C;&#xFF0C;64&#x4F4D;app&#x53EA;&#x80FD;&#x8BBF;&#x95EE;64&#x4F4D;&#xFF0C;&#x539F;&#x6765;&#x53EF;&#x4EE5;&#x5F88;&#x7B80;&#x5355;&#x5730;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;flag&#x6765;&#x5B9E;&#x73B0;&#x4E92;&#x901A;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">KEY_WOW64_64KEY</span><br><span class="line">KEY_WOW64_32KEY</span><br></pre></td></tr></table></figure></p>
+<p>&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x7684;&#x51FD;&#x6570;&#x5305;&#x62EC;&#xFF1A;<br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724844(v=vs.85).aspx" target="_blank" rel="external">RegCreateKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724847(v=vs.85).aspx" target="_blank" rel="external">RegDeleteKeyEx</a><br><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724897(v=vs.85).aspx" target="_blank" rel="external">RegOpenKeyEx</a></p>
+<p>MSDN&#xFF1A;<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129(v=vs.85).aspx" target="_blank" rel="external">Accessing an Alternate Registry View</a></p>
 
       
     </div>
